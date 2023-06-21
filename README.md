@@ -33,8 +33,8 @@ The Flutter Object Detection App is a mobile application that enables users to p
 
 ## Made on System with
 
-- Flutter SDK: version 3.11.0
-- Dart SDK: version 3.1.0 or higher
+- Flutter SDK: version 3.10.5
+- Dart SDK: version 3.0.5
 
 ## System Requirements
 
@@ -44,12 +44,18 @@ The Flutter Object Detection App is a mobile application that enables users to p
 ## Installation
 
 1. Install Flutter by following the official installation guide: [Flutter Installation Guide](https://docs.flutter.dev/get-started/install)
+   - You may need to install Android Studio for the latest command line tools [Instructions for downloading command line tools](https://developer.android.com/tools)
+   - You may also need to accept the licences by running the following command in the terminal:
 
-2. Unzip the zip file:
+   ```
+   flutter doctor --android-licenses
+   ```
+
+2. Unzip the zip file
 
 3. Navigate to the folder containing the unziped Files:
 
-4. Fetch the project dependencies:
+4. Fetch the project dependencies by running the following command in the terminal:
 
    ```
    flutter pub get
@@ -112,3 +118,9 @@ Feel free to modify these parameters based on your specific requirements and upd
 If you encounter any issues while installing or running the app, please refer to the official Flutter documentation for troubleshooting guidance: [Flutter Troubleshooting](https://flutter.dev/docs/resources/faq)
 
 Additionally, you can seek help from the Flutter community forums and resources for assistance in resolving any problems you may encounter during the app development process.
+
+If you encounter error `Target URI does not exist: 'package:packageName/packageName.dart'` run the command:
+
+```
+flutter pub get
+```
